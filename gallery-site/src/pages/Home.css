@@ -1,0 +1,55 @@
+/* 🎨 Define color variables */
+:root {
+    --bg-primary: #660000;        /* Deep cherry red */
+    --bg-dark: #4a0000;           /* Even deeper for cards */
+    --accent-mid: #991111;        /* Slightly brighter red */
+    --accent-light: #cc6666;      /* Soft cherry pink */
+    --highlight: #ffd580;         /* Vintage gold for buttons */
+    --text-light: #f8f8f8;        /* Soft white for text */
+  }
+  
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3 {
+    color: var(--text-light);
+  }
+  
+  .card {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    border: 1px solid var(--accent-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  button,
+  .btn {
+    background-color: var(--highlight);
+    color: var(--bg-primary);
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  button:hover,
+  .btn:hover {
+    background-color: var(--accent-mid);
+    color: var(--text-light);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
