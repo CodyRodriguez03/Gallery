@@ -1,23 +1,24 @@
-/* 🎨 Define color variables */
 :root {
-    --bg-primary: #660000;        /* Deep cherry red */
-    --bg-dark: #4a0000;           /* Even deeper for cards */
-    --accent-mid: #991111;        /* Slightly brighter red */
-    --accent-light: #cc6666;      /* Soft cherry pink */
-    --highlight: #ffd580;         /* Vintage gold for buttons */
-    --text-light: #f8f8f8;        /* Soft white for text */
+    --bg-primary: #660000;       /* Deep cherry red */
+    --bg-dark: #4a0000;          /* Even deeper for cards */
+    --accent-mid: #991111;       /* Slightly brighter red */
+    --accent-light: #cc6666;     /* Soft cherry pink */
+    --highlight: #ffd580;        /* Vintage gold for buttons */
+    --text-light: #f8f8f8;       /* Soft white for text */
   }
-  
+
   body {
     background-color: var(--bg-primary);
     color: var(--text-light);
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Georgia', sans-serif;
     margin: 0;
     padding: 0;
   }
   
   h1, h2, h3 {
     color: var(--text-light);
+    text-align: center;
+    padding-top: 2.5%;
   }
   
   .card {
@@ -29,7 +30,7 @@
   }
   
   .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
   }
   
   button,
@@ -52,4 +53,8 @@
     height: auto;
     border-radius: 4px;
   }
-  
+
+  .home-center{
+    display: flex;
+    width: 100%; 
+  }

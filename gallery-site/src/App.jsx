@@ -2,7 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom'
-import './App.css'
+import './Global.css'
 
 import Home from './pages/Home';
 import ExhibitA from './pages/ExhibitA';
