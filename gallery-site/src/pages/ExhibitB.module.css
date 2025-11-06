@@ -1,31 +1,37 @@
-/* ExhibitA.module.css */
+.exhibitContainer {
+  padding: 2rem;
+}
 
-body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    font-family: 'Georgia', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .galleryContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 16px;
-    padding: 16px;
-  }
-  
-  .galleryItem {
-    width: 250px;
-    cursor: pointer;
-  }
-  
-  .captionBox {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-light); /* picks up from theme */
+}
+
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.imageItem {
+  cursor: pointer;
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.imgB {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.captionBox {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--bg-dark); /* theme controlled */
+  color: var(--text-light);
+}

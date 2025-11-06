@@ -1,48 +1,13 @@
 .container {
-  background-color: var(--bg-primary);
-  color: var(--text-light);
-  font-family: 'Georgia', sans-serif;
   padding: 1rem;
 }
 
 .heading {
-  color: var(--text-light);
   margin-bottom: 0.5rem;
   text-align: justify;
 }
 
-.card {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  border: 1px solid var(--accent-light);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-.button {
-  background-color: var(--highlight);
-  color: var(--bg-primary);
-  border: none;
-  font-weight: bold;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  padding: 0.5rem 1rem;
-}
-
-.button:hover {
-  background-color: var(--accent-mid);
-  color: var(--text-light);
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.center{
-  width: 100vw;
+.hImage {
+  width: 100%;
+  height: auto; /* safer than fixed 50% */
 }

@@ -1,60 +1,90 @@
 :root {
-    --bg-primary: #660000;       /* Deep cherry red */
-    --bg-dark: #4a0000;          /* Even deeper for cards */
-    --accent-mid: #991111;       /* Slightly brighter red */
-    --accent-light: #cc6666;     /* Soft cherry pink */
-    --highlight: #ffd580;        /* Vintage gold for buttons */
-    --text-light: #f8f8f8;       /* Soft white for text */
-  }
+  --bg-primary: #660000;
+  --bg-dark: #4a0000;
+  --accent-mid: #991111;
+  --accent-light: #cc6666;
+  --highlight: #ffd580;
+  --text-light: #f8f8f8;
+}
 
-  body {
-    background-color: var(--bg-primary);
-    color: var(--text-light);
-    font-family: 'Georgia', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1, h2, h3 {
-    color: var(--text-light);
-    text-align: center;
-    padding-top: 2.5%;
-  }
-  
-  .card {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    border: 1px solid var(--accent-light);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  button,
-  .btn {
-    background-color: var(--highlight);
-    color: var(--bg-primary);
-    border: none;
-    font-weight: bold;
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-  
-  button:hover,
-  .btn:hover {
-    background-color: var(--accent-mid);
-    color: var(--text-light);
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
+/* Exhibit A - Powdery, soft pastel */
+[data-theme="exhibitA"] {
+  --bg-primary: #FAF7F3;   /* powdery lilac-gray */
+  --bg-dark: #F0E4D3;      /* dusty lavender */
+  --accent-mid: #DCC5B2;   /* muted purple */
+  --accent-light: #D9A299; /* chalky lavender */
+  --highlight: #f9e6f0;    /* pale powder pink */
+  --text-light: #2f2f2f;   /* softer dark text */
+}
 
-  .home-center{
-    display: flex;
-    width: 100%; 
-  }
+
+/* Exhibit B og - Dark purple theme */
+
+[data-theme="exhibitB"] {
+  --bg-primary: #2a0033;  /* deep plum */
+  --bg-dark: #1a0024;     /* muted purple-black */
+  --accent-mid: #5e2b91;  /* royal purple */
+  --accent-light: #9d4edd;/* glossy violet */
+  --highlight: #d6b3ff;   /* soft lilac highlight */
+  --text-light: #f2eaff;  /* gentler text */
+}
+
+/* Exhibit C - Springtime theme */
+[data-theme="exhibitC"] {
+  --bg-primary: #ecfff5; /* soft minty white */
+  --bg-dark: #bae6cf;    /* pale leafy green */
+  --accent-mid: #66c966;   /* vibrant soft green */
+  --accent-light: #ffb85c; /* sunny warm orange */
+  --highlight: #fff799;    /* cheerful spring yellow */
+  --text-light: #2a2a2a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-light);
+  font-family: 'Georgia', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: var(--text-light);
+  text-align: center;
+  padding-top: 2.5%;
+}
+
+/* Reusable card style */
+.card {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid var(--accent-light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Reusable button style */
+button, .btn {
+  background-color: var(--highlight);
+  color: var(--bg-primary);
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+button:hover, .btn:hover {
+  background-color: var(--accent-mid);
+  color: var(--text-light);
+}
+
+/* Utility classes */
+.center {
+  display: grid;
+  place-items: center;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
