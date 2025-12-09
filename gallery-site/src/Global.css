@@ -7,18 +7,15 @@
   --text-light: #f8f8f8;
 }
 
-/* Exhibit A - Powdery, soft pastel */
 [data-theme="exhibitA"] {
-  --bg-primary: #FAF7F3;   /* powdery lilac-gray */
-  --bg-dark: #F0E4D3;      /* dusty lavender */
-  --accent-mid: #DCC5B2;   /* muted purple */
-  --accent-light: #D9A299; /* chalky lavender */
-  --highlight: #f9e6f0;    /* pale powder pink */
-  --text-light: #2f2f2f;   /* softer dark text */
+  --bg-primary: #DEBE9F;  /* honey-cream wood */
+  --bg-dark: #CDAA8C;
+  --accent-mid: #B3937A;
+  --accent-light: #D28472;
+  --highlight: #EDCFDB;
+  --text-light: #2a2a2a;
 }
 
-
-/* Exhibit B og - Dark purple theme */
 
 [data-theme="exhibitB"] {
   --bg-primary: #2a0033;  /* deep plum */
@@ -29,14 +26,13 @@
   --text-light: #f2eaff;  /* gentler text */
 }
 
-/* Exhibit C - Springtime theme */
 [data-theme="exhibitC"] {
-  --bg-primary: #ecfff5; /* soft minty white */
-  --bg-dark: #bae6cf;    /* pale leafy green */
-  --accent-mid: #66c966;   /* vibrant soft green */
-  --accent-light: #ffb85c; /* sunny warm orange */
-  --highlight: #fff799;    /* cheerful spring yellow */
-  --text-light: #2a2a2a;
+  --bg-primary: #2b2d31;   /* cool charcoal gray */
+  --bg-dark: #1f2023;      /* deep slate */
+  --accent-mid: #8e9aa8;   /* desaturated blue-gray */
+  --accent-light: #d4d9df; /* soft cool highlight */
+  --highlight: #ffffff;    /* crisp white (frames + typography pops) */
+  --text-light: #f5f6f7;   /* gentle white for readability */
 }
 
 body {

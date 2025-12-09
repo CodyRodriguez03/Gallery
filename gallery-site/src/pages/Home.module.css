@@ -3,11 +3,11 @@
 }
 
 .heading {
-  margin-bottom: 0.5rem;
-  text-align: justify;
+  padding-top: 5%;
 }
 
 .hImage {
   width: 100%;
-  height: auto; /* safer than fixed 50% */
+  height: 240px;
+  object-fit: cover;
 }

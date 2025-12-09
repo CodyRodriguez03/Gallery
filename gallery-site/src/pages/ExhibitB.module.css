@@ -1,37 +1,143 @@
-.exhibitContainer {
-  padding: 2rem;
+/************************************
+ *  SECTION: Layout + Title
+ ************************************/
+ .exhibitContainer {
+  padding: 2.5%;
 }
 
 .title {
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--text-light); /* picks up from theme */
+  color: var(--text-light);
 }
 
-.galleryContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
+
+/************************************
+ *  SECTION: Responsive Grid
+ ************************************/
+.galleryContainer { /*Pretty sure I'm gonna copy this container cause it's goated */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.5%;
+  justify-items: center;
 }
 
-.imageItem {
-  cursor: pointer;
-  flex: 1 1 200px;
-  max-width: 250px;
-  text-align: center;
+
+/************************************
+ *  SECTION: Card Container (Outer)
+ ************************************/
+.card {
+  width: 100%;
+  max-width: 100%;
+  height: 550px;
+  perspective: 1000px;
+  background-size: cover;
+  background-position: center;
 }
 
+
+/************************************
+ *  SECTION: Inner 3D Flip Container
+ ************************************/
+.cardInner {
+  border-radius: 12px;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+/* Subtle highlight on hover */
+.cardInner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(to left, rgba(0,0,0,0.15), transparent 40%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.cardInner:hover::before {
+  opacity: 1;
+}
+
+.card:hover .cardInner {
+  transform: rotateY(180deg) scale(1.05);
+}
+
+
+/************************************
+ *  SECTION: Front & Back Faces
+ ************************************/
+.cardFront,
+.cardBack {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+
+/************************************
+ *  SECTION: Front Image
+ ************************************/
 .imgB {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
-.captionBox {
-  font-size: 0.9rem;
-  padding: 0.5rem;
-  border-radius: 8px;
-  background: var(--bg-dark); /* theme controlled */
+
+/************************************
+ *  SECTION: Back Face + Blur Layer
+ ************************************/
+.cardBack {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Blurred background image */
+.cardBackBlur {
+  background-size: cover;
+  background-position: center;
+  filter: blur(16px) brightness(0.7);
+  transform: scale(1.1);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+
+}
+
+
+/************************************
+ *  SECTION: Caption Text
+ ************************************/
+.caption {
+  position: relative;
+  z-index: 1;
   color: var(--text-light);
+  font-size: 1.1rem;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  background: rgba(0,0,0,0.35);
+  border-radius: 8px;
+}
+
+.caption::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  z-index: -1;
 }

@@ -10,9 +10,10 @@ import styles from './Home.module.css';
 export default function Home(){
     return(
         <>
-        <h1>Welcome to</h1>
-        <h2>Cody Rodriguez's Gallery!</h2>
-        <br></br>
+        <div className={styles.heading}>
+            <h1>Welcome to The Gallery!</h1>
+            <br></br>
+        </div>
 
         <div className={styles.center}>
             <Container>
