@@ -15,9 +15,10 @@ export default function ExhibitC(){
     const images = [
         { src: Spr25_1, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum' },
         { src: Spr25_2, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum'},
-        { src: Fl23_1, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum'},
-        { src: Fl23_2, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum'},
         { src: Fl23_3, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum' },
+        { src: Fl23_2, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum'},
+        { src: Fl23_1, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum'},
+
         { src: Fl23_4, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum' },
         { src: Fl23_5, alt: 'Lorem Ipsum', caption: 'Lorem Ipsum'}
         ];
@@ -34,6 +35,9 @@ export default function ExhibitC(){
           </div>
         ))}
       </div>
+      <button className="btn" onClick={() => window.location.href = '/'}>
+    Back To Homepage!
+    </button>
 
 
       </>

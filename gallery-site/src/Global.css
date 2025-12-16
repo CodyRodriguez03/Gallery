@@ -1,4 +1,4 @@
-:root {
+[data-theme="home"] {
   --bg-primary: #660000;
   --bg-dark: #4a0000;
   --accent-mid: #991111;
@@ -51,7 +51,7 @@ h1, h2, h3 {
 
 /* Reusable card style */
 .card {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-primary);
   color: var(--text-light);
   border: 1px solid var(--accent-light);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -63,16 +63,24 @@ h1, h2, h3 {
 
 /* Reusable button style */
 button, .btn {
-  background-color: var(--highlight);
-  color: var(--bg-primary);
-  border: none;
-  font-weight: bold;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-button:hover, .btn:hover {
   background-color: var(--accent-mid);
   color: var(--text-light);
+  border: none;
+  font-weight: bold;
+  padding: 12px 24px;      /* ⬅ Makes it bigger */
+  font-size: 1.1rem;       /* ⬅ Slightly larger text */
+  border-radius: 8px;      /* ⬅ Rounded edges */
+  cursor: pointer;
+  display: block;          /* Needed to center with margin auto */
+  margin: 20px auto;       /* ⬅ Centers it horizontally */
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
+
+button:hover, .btn:hover {
+  background-color: var(--accent-light);
+  color: var(--highlight);
+}
+
 
 /* Utility classes */
 .center {

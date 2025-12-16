@@ -43,6 +43,9 @@ export default function ExhibitB() {
         </div>
         ))}
       </div>
+      <button className="btn" onClick={() => window.location.href = '/'}>
+    Back To Homepage!
+    </button>
     </div>
   );
   

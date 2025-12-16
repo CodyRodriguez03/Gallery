@@ -21,17 +21,20 @@ function ThemedLayout() {
   useEffect(() => {
     const body = document.body;
     const path = location.pathname.toLowerCase();
-
+  
     if (path.startsWith("/exhibita")) {
       body.setAttribute("data-theme", "exhibitA");
     } else if (path.startsWith("/exhibitb")) {
       body.setAttribute("data-theme", "exhibitB");
     } else if (path.startsWith("/exhibitc")) {
       body.setAttribute("data-theme", "exhibitC");
+    } else if (path === "/") {
+      body.setAttribute("data-theme", "home");
     } else {
       body.removeAttribute("data-theme");
     }
-  }, [location]);
+  }, [location.pathname]);
+  
 
   return <Outlet />;
 }

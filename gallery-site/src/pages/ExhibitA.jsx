@@ -24,27 +24,30 @@ export default function ExhibitA() {
 
 return (
   <>
-  <div data-theme="exhibitA">
-  <h1>The Beatles</h1>
-  <br/>
-  <div className='center'> {images.map((image, index) => (
-      <div className={styles.galleryContainer}
-      key={index}
-      onClick={() => setOpenIndex(openIndex === index ? null : index)}>
-    <img
-      src={image.src}
-      alt={image.alt}
-      className={`${styles.imgA} img-fluid rounded`}
-    />
-    <Collapse in={openIndex === index}>
-      <div className="caption-box mt-2">
-        {image.caption}
-      </div>
-    </Collapse>
-  </div>
-  ))}
-  </div>
-  </div>
+    <h1>The Beatles</h1>
+    <br/>
+    <div className='center'> {images.map((image, index) => (
+        <div className={styles.galleryContainer}
+        key={index}
+        onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+      <img
+        src={image.src}
+        alt={image.alt}
+        className={`${styles.imgA} img-fluid rounded`}
+      />
+      <Collapse in={openIndex === index}>
+        <div className="caption-box mt-2">
+          {image.caption}
+        </div>
+      </Collapse>
+    </div>
+    ))}
+    </div>
+    <button className="btn" onClick={() => window.location.href = '/'}>
+    Back To Homepage!
+    </button>
+
+
   </>
 );
 }

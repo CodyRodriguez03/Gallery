@@ -10,6 +10,7 @@ import styles from './Home.module.css';
 export default function Home(){
     return(
         <>
+
         <div className={styles.heading}>
             <h1>Welcome to The Gallery!</h1>
             <br></br>
@@ -46,7 +47,7 @@ export default function Home(){
                                 <Card.Img variant="top" src={coverImage} className={styles.hImage} />
                                 <Card.Body>
                                     <Card.Title>Exhibit C</Card.Title>
-                                    <Card.Text>Enter a world of fantasm and wonder!</Card.Text>
+                                    <Card.Text>Enter a world of wonder!</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Link>
