@@ -8,7 +8,7 @@
 }
 
 [data-theme="exhibitA"] {
-  --bg-primary: #DEBE9F;  /* honey-cream wood */
+  --bg-primary: #DEBE9F;  
   --bg-dark: #CDAA8C;
   --accent-mid: #B3937A;
   --accent-light: #D28472;
@@ -18,21 +18,21 @@
 
 
 [data-theme="exhibitB"] {
-  --bg-primary: #2a0033;  /* deep plum */
-  --bg-dark: #1a0024;     /* muted purple-black */
-  --accent-mid: #5e2b91;  /* royal purple */
-  --accent-light: #9d4edd;/* glossy violet */
-  --highlight: #d6b3ff;   /* soft lilac highlight */
-  --text-light: #f2eaff;  /* gentler text */
+  --bg-primary: #2a0033;  
+  --bg-dark: #1a0024;    
+  --accent-mid: #5e2b91;  
+  --accent-light: #9d4edd;
+  --highlight: #d6b3ff;   
+  --text-light: #f2eaff; 
 }
 
 [data-theme="exhibitC"] {
-  --bg-primary: #2b2d31;   /* cool charcoal gray */
-  --bg-dark: #1f2023;      /* deep slate */
-  --accent-mid: #8e9aa8;   /* desaturated blue-gray */
-  --accent-light: #d4d9df; /* soft cool highlight */
-  --highlight: #ffffff;    /* crisp white (frames + typography pops) */
-  --text-light: #f5f6f7;   /* gentle white for readability */
+  --bg-primary: #2b2d31;   
+  --bg-dark: #1f2023;      
+  --accent-mid: #8e9aa8;   
+  --accent-light: #d4d9df; 
+  --highlight: #ffffff;    
+  --text-light: #f5f6f7;   
 }
 
 body {
@@ -49,7 +49,6 @@ h1, h2, h3 {
   padding-top: 2.5%;
 }
 
-/* Reusable card style */
 .card {
   background-color: var(--bg-primary);
   color: var(--text-light);
@@ -61,18 +60,17 @@ h1, h2, h3 {
   transform: scale(1.05);
 }
 
-/* Reusable button style */
 button, .btn {
   background-color: var(--accent-mid);
   color: var(--text-light);
   border: none;
   font-weight: bold;
-  padding: 12px 24px;      /* ⬅ Makes it bigger */
-  font-size: 1.1rem;       /* ⬅ Slightly larger text */
-  border-radius: 8px;      /* ⬅ Rounded edges */
+  padding: 12px 24px;     
+  font-size: 1.1rem;      
+  border-radius: 8px;     
   cursor: pointer;
-  display: block;          /* Needed to center with margin auto */
-  margin: 20px auto;       /* ⬅ Centers it horizontally */
+  display: block;         
+  margin: 20px auto;      
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 

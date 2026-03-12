@@ -9,12 +9,13 @@ import point from '../assets/ExhibitB/point.png';
 
 export default function ExhibitB() {
 
+  //ORDER MATTERS
   const images = [
-    { src: cSplash, alt: 'Color Splash of Hozier performing', caption: 'Lorem Ipsum' },
-    { src: hCover, alt: 'Hozier playing guitar from below', caption: 'Lorem Ipsum' },
-    { src: point, alt: 'Hozier pointing while singing', caption: 'Lorem Ipsum' },
-    { src: bw, alt: 'update', caption: 'Lorem Ipsum' },
-    { src: below, alt: 'update', caption: 'Lorem Ipsum' }
+    { src: cSplash, alt: 'Color Splash of Hozier performing', caption: <><h4>Hozier fun fact!</h4> <br /> <p>Hozier was born on March 17th, 1990. Saint Patrick's day!</p></>},
+    { src: hCover, alt: 'Hozier playing guitar from below', caption: <><h4>Hozier fun fact!</h4> <br /> <p>While Hozier was nominated for a grammy for his hit song "Take Me to Church", he lost to Sam Smith's song "Stay with Me"</p></> },
+    { src: point, alt: 'Hozier pointing while singing', caption: <><h4>Hozier fun fact!</h4> <br /> <p>Hozier was a member of the Irish choral group Anúna from 2009 to 2012.</p></> },
+    { src: bw, alt: 'update', caption: <><h4>Hozier fun fact!</h4> <br /> <p>Hozier's favorite movie was The Blues Brothers, helping solidify his love for the style.</p></> },
+    { src: below, alt: 'update', caption: <><h4>Hozier fun fact!</h4> <br /> <p>Contrary to popular belief, Hozier is a self proclaimed atheist.</p></> }
   ];
 
 

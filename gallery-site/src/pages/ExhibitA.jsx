@@ -12,6 +12,7 @@ import rs from '../assets/ExhibitA/RS.png';
 export default function ExhibitA() {
   const [openIndex, setOpenIndex] = useState(null);
 
+  //ORDER MATTERS
   const images = [
   { src: aerial, alt: 'Aerial Shot of The Beatles', caption: 'Lorem Ipsum' },
   { src: rs, alt: 'Ringo Starr', caption: 'Lorem Ipsum'},
@@ -26,7 +27,7 @@ return (
   <>
     <h1>The Beatles</h1>
     <br/>
-    <div className='center'> {images.map((image, index) => (
+    <div className='center'> {images.map((image, index) => ( //indexes through each image and displays them
         <div className={styles.galleryContainer}
         key={index}
         onClick={() => setOpenIndex(openIndex === index ? null : index)}>

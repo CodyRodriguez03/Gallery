@@ -22,6 +22,7 @@ function ThemedLayout() {
     const body = document.body;
     const path = location.pathname.toLowerCase();
   
+    //applies data themes based on url
     if (path.startsWith("/exhibita")) {
       body.setAttribute("data-theme", "exhibitA");
     } else if (path.startsWith("/exhibitb")) {
@@ -39,10 +40,11 @@ function ThemedLayout() {
   return <Outlet />;
 }
 
+//pages
 const routes = [
   {
     path: '/',
-    element: <ThemedLayout />,   // 🔑 wraps all pages
+    element: <ThemedLayout />,   
     errorElement: <NotFoundPage />,
     children: [
       { path: '/', element: <Home /> },
